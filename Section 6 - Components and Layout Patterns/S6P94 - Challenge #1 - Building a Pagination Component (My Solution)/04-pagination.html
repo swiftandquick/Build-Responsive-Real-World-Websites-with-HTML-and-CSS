@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination Component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .pagination {
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+      }
+
+      span {
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+
+      .btn {
+        margin: 10px;
+      }
+
+      .btn--arrow,
+      .btn--page {
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
+      }
+
+      .btn--arrow {
+        color: #087f5b;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        border: 0.5px solid #087f5b;
+      }
+
+      .btn--page {
+        color: #087f5b;
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        border: none;
+      }
+
+      .btn--arrow:hover,
+      .btn--page:hover,
+      .btn-active {
+        color: white;
+        background-color: #087f5b;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <div class="pagination">
+        <button class="btn btn--arrow">&lt;</button>
+        <button class="btn btn--page">1</button>
+        <button class="btn btn--page">2</button>
+        <button class="btn btn--page btn-active">3</button>
+        <button class="btn btn--page">4</button>
+        <button class="btn btn--page">5</button>
+        <button class="btn btn--page">6</button>
+        <span>...</span>
+        <button class="btn btn--page">23</button>
+        <button class="btn btn--arrow">&gt;</button>
+      </div>
+    </table>
+  </body>
+</html>
